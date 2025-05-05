@@ -1,4 +1,4 @@
-use ruts_tg::*;
+use ruts_tg_bot::*;
 use std::error::Error;
 
 #[tokio::main]

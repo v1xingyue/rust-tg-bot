@@ -85,8 +85,8 @@ impl MyBot {
             let tasks = task_loader.load_tasks().await;
             for task in tasks {
                 match task.send(&self).await {
-                    Ok(_) => log::info!("发送消息成功"),
-                    Err(e) => log::error!("发送消息失败: {:?}", e),
+                    Ok(_) => log::info!("message sent"),
+                    Err(e) => log::error!("message send failed: {:?}", e),
                 }
             }
         }
